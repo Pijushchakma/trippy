@@ -18,13 +18,16 @@ function Navbar() {
         flexDirection: "column",
         justifyContent: "space-between",
         borderRadius: 2,
-        marginTop: "2%",
+        marginTop: "1%",
         mx: "auto",
         boxShadow: "-10px 10px 10px -0px rgba(0, 0, 0, 0.1)",
-        position: "sticky",
-        top: 2,
+        position: "fixed",
         zIndex: 100,
         alignItems: "center",
+        backgroundColor: "white",
+        left: "50%",
+        transform: "translateX(-50%)",
+        padding: "5px",
       }}
     >
       <Box
@@ -53,9 +56,8 @@ function Navbar() {
             flexDirection: "row",
             justifyContent: "flex-end",
             width: { sm: "90%", lg: "80%" },
-            alignContent: "center",
             alignItems: "center",
-            gap: { md: 3, lg: 5, xl: 6 },
+            gap: { md: 2, lg: 3 },
           }}
         >
           <Link
@@ -71,12 +73,13 @@ function Navbar() {
                 flexDirection: "row",
                 alignItems: "center",
                 gap: 0.5,
-                "&:hover": {
-                  backgroundColor: "#557A46",
-                  color: "white",
-                },
                 borderRadius: 1,
                 justifyContent: "center",
+                "&:hover": {
+                  backgroundColor: "#01959a",
+                  color: "white",
+                },
+                padding: "10px",
               }}
             >
               <HomeIcon />
@@ -91,19 +94,27 @@ function Navbar() {
             </Box>
           </Link>
 
-          <Link to="/about" style={{ textDecoration: "none", color: "black" }}>
+          <Link
+            to="/about"
+            style={{
+              textDecoration: "none",
+              color: "black",
+            }}
+          >
             <Box
               sx={{
                 display: "flex",
                 flexDirection: "row",
                 alignItems: "center",
                 gap: 0.5,
-                "&:hover": {
-                  backgroundColor: "#557A46",
-                  color: "white",
-                },
+
                 borderRadius: 1,
                 justifyContent: "center",
+                "&:hover": {
+                  backgroundColor: "#01959a",
+                  color: "white",
+                },
+                padding: "10px",
               }}
             >
               <InfoIcon />
@@ -120,7 +131,10 @@ function Navbar() {
 
           <Link
             to="/services"
-            style={{ textDecoration: "none", color: "black" }}
+            style={{
+              textDecoration: "none",
+              color: "black",
+            }}
           >
             <Box
               sx={{
@@ -128,12 +142,14 @@ function Navbar() {
                 flexDirection: "row",
                 alignItems: "center",
                 gap: 0.5,
-                "&:hover": {
-                  backgroundColor: "#557A46",
-                  color: "white",
-                },
+
                 borderRadius: 1,
                 justifyContent: "center",
+                "&:hover": {
+                  backgroundColor: "#01959a",
+                  color: "white",
+                },
+                padding: "10px",
               }}
             >
               <MedicalInformationIcon />
@@ -150,7 +166,10 @@ function Navbar() {
 
           <Link
             to="/contact"
-            style={{ textDecoration: "none", color: "black" }}
+            style={{
+              textDecoration: "none",
+              color: "black",
+            }}
           >
             <Box
               sx={{
@@ -158,12 +177,13 @@ function Navbar() {
                 flexDirection: "row",
                 alignItems: "center",
                 gap: 0.5,
-                "&:hover": {
-                  backgroundColor: "#557A46",
-                  color: "white",
-                },
                 borderRadius: 1,
                 justifyContent: "center",
+                "&:hover": {
+                  backgroundColor: "#01959a",
+                  color: "white",
+                },
+                padding: "10px",
               }}
             >
               <PermContactCalendarIcon />
@@ -186,7 +206,11 @@ function Navbar() {
               gap: 1,
               backgroundColor: "#EEEEEE",
               borderRadius: 2,
-              paddingX: "1%",
+              "&:hover": {
+                backgroundColor: "black",
+                color: "white",
+              },
+              padding: "10px",
             }}
           >
             <Typography
@@ -195,6 +219,7 @@ function Navbar() {
                 fontSize: "1.3rem",
                 display: "inline-block",
                 whiteSpace: "nowrap",
+                cursor: "pointer",
               }}
             >
               Sign Up
@@ -244,7 +269,7 @@ function Navbar() {
               width: "100%",
               gap: 1,
               "&:hover": {
-                backgroundColor: "#557A46",
+                backgroundColor: "#01959a",
                 color: "white",
               },
               py: "2%",
@@ -276,7 +301,7 @@ function Navbar() {
               gap: 1,
               paddingX: "2%",
               "&:hover": {
-                backgroundColor: "#557A46",
+                backgroundColor: "#01959a",
                 color: "white",
               },
               borderRadius: 1,
@@ -308,7 +333,7 @@ function Navbar() {
               gap: 1,
               paddingX: "2%",
               "&:hover": {
-                backgroundColor: "#557A46",
+                backgroundColor: "#01959a",
                 color: "white",
               },
               borderRadius: 1,
@@ -340,7 +365,7 @@ function Navbar() {
               gap: 1,
               paddingX: "2%",
               "&:hover": {
-                backgroundColor: "#557A46",
+                backgroundColor: "#01959a",
                 color: "white",
               },
               borderRadius: 1,
@@ -366,7 +391,7 @@ function Navbar() {
             flexDirection: "row",
             alignItems: "center",
             gap: 1,
-            backgroundColor: "#557A46",
+            backgroundColor: "#01959a",
             borderRadius: 2,
             paddingX: "1%",
             py: "2%",

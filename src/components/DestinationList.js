@@ -8,7 +8,7 @@ function DestinationList() {
   return (
     <Box
       sx={{
-        width: { sx: "95%", md: "80%", lg: "60%" },
+        width: { xs: "95%", md: "80%", lg: "60%" },
         textAlign: "center",
         mx: "auto",
       }}

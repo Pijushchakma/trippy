@@ -37,7 +37,7 @@ function TripData({ image, title, details }) {
       <Typography sx={{ fontSize: "2rem", fontWeight: "600" }}>
         {title}
       </Typography>
-      <Typography>{details}</Typography>
+      <Typography sx={{ textAlign: "justify" }}>{details}</Typography>
     </Box>
   );
 }

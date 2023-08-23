@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import React from "react";
+import heroImage from "../assets/12.jpg";
 import DestinationList from "../components/DestinationList";
 import Footer from "../components/Footer";
 import HeroSection from "../components/HeroSection";
@@ -18,7 +19,12 @@ function Home() {
       }}
     >
       <Navbar />
-      <HeroSection />
+      <HeroSection
+        heroImage={heroImage}
+        title={"Your Journey Your Story"}
+        details={"Choose Your Favourite Destination"}
+        showButton={true}
+      />
       <DestinationList />
       <Trip />
       <Footer />

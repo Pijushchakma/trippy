@@ -20,7 +20,7 @@ function Navbar() {
         borderRadius: 2,
         marginTop: "1%",
         mx: "auto",
-        boxShadow: "-10px 10px 10px -0px rgba(0, 0, 0, 0.1)",
+        boxShadow: "-10px 10px 10px -10px rgba(0, 0, 0, 0.6)",
         position: "fixed",
         zIndex: 100,
         alignItems: "center",
@@ -57,7 +57,7 @@ function Navbar() {
             justifyContent: "flex-end",
             width: { sm: "90%", lg: "80%" },
             alignItems: "center",
-            gap: { md: 2, lg: 3 },
+            gap: { xs: 1, md: 1, lg: 3 },
           }}
         >
           <Link

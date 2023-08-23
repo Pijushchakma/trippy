@@ -1,8 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
-import heroImage from "../assets/12.jpg";
 
-function HeroSection() {
+function HeroSection({ heroImage, title, details, showButton }) {
   return (
     <Box
       sx={{
@@ -39,7 +38,7 @@ function HeroSection() {
             "-webkit-text-fill-color": "transparent",
           }}
         >
-          Your Journey Your Story
+          {title}
         </Typography>
         <Typography
           sx={{
@@ -48,20 +47,21 @@ function HeroSection() {
             color: "white",
           }}
         >
-          Choose Your Favourite Destination
+          {details}
         </Typography>
-
-        <Button
-          variant="contained"
-          size="large"
-          color="inherit"
-          sx={{
-            margin: "2%",
-            fontWeight: "700",
-          }}
-        >
-          Travel Plan
-        </Button>
+        {showButton ? (
+          <Button
+            variant="contained"
+            size="large"
+            color="inherit"
+            sx={{
+              margin: "2%",
+              fontWeight: "700",
+            }}
+          >
+            Travel Plan
+          </Button>
+        ) : null}
       </Box>
     </Box>
   );

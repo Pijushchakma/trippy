@@ -29,7 +29,7 @@ function Destination({ firstImage, secondImage, title, details, isReverse }) {
         <Typography sx={{ fontSize: "2rem", fontWeight: "600" }}>
           {title}
         </Typography>
-        <Typography>{details}</Typography>
+        <Typography sx={{ textAlign: "justify" }}>{details}</Typography>
       </Box>
       {/* ...........this box is for images........... */}
       <Box
